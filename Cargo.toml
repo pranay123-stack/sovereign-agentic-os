@@ -21,7 +21,7 @@ members = [
 version = "0.5.5"
 edition = "2021"
 license = "Apache-2.0 OR MIT"
-repository = "https://github.com/RightNow-AI/sovereign-agentic-os"
+repository = "https://github.com/sovereign-agentic-os/sovereign-agentic-os"
 rust-version = "1.75"
 
 [workspace.dependencies]
