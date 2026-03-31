@@ -1,0 +1,17 @@
+{
+  "name": "@sovereign-agentic-os/sdk",
+  "version": "0.1.0",
+  "description": "Official JavaScript/TypeScript client for the Sovereign Agentic OS Agent OS REST API",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": ["sovereign-agentic-os", "agent", "ai", "llm", "sdk"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sovereign-agentic-os/sovereign-agentic-os"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": ["index.js", "index.d.ts"]
+}

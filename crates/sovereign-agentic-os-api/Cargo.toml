@@ -1,0 +1,47 @@
+[package]
+name = "sovereign-agentic-os-api"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "HTTP/WebSocket API server for the Sovereign Agentic OS Agent OS daemon"
+
+[dependencies]
+sovereign-agentic-os-types = { path = "../sovereign-agentic-os-types" }
+sovereign-agentic-os-kernel = { path = "../sovereign-agentic-os-kernel" }
+sovereign-agentic-os-runtime = { path = "../sovereign-agentic-os-runtime" }
+sovereign-agentic-os-memory = { path = "../sovereign-agentic-os-memory" }
+sovereign-agentic-os-channels = { path = "../sovereign-agentic-os-channels" }
+sovereign-agentic-os-wire = { path = "../sovereign-agentic-os-wire" }
+sovereign-agentic-os-skills = { path = "../sovereign-agentic-os-skills" }
+sovereign-agentic-os-hands = { path = "../sovereign-agentic-os-hands" }
+sovereign-agentic-os-extensions = { path = "../sovereign-agentic-os-extensions" }
+sovereign-agentic-os-migrate = { path = "../sovereign-agentic-os-migrate" }
+dashmap = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+toml = { workspace = true }
+tracing = { workspace = true }
+async-trait = { workspace = true }
+axum = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+futures = { workspace = true }
+governor = { workspace = true }
+tokio-stream = { workspace = true }
+subtle = { workspace = true }
+base64 = { workspace = true }
+sha2 = { workspace = true }
+hmac = { workspace = true }
+hex = { workspace = true }
+socket2 = { workspace = true }
+reqwest = { workspace = true }
+argon2 = { workspace = true }
+rand = { workspace = true }
+
+[dev-dependencies]
+tokio-test = { workspace = true }
+tempfile = { workspace = true }
+uuid = { workspace = true }

@@ -1,0 +1,34 @@
+[package]
+name = "sovereign-agentic-os-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "CLI tool for the Sovereign Agentic OS Agent OS"
+
+[[bin]]
+name = "sovereign-agentic-os"
+path = "src/main.rs"
+
+[dependencies]
+sovereign-agentic-os-types = { path = "../sovereign-agentic-os-types" }
+sovereign-agentic-os-kernel = { path = "../sovereign-agentic-os-kernel" }
+sovereign-agentic-os-api = { path = "../sovereign-agentic-os-api" }
+sovereign-agentic-os-migrate = { path = "../sovereign-agentic-os-migrate" }
+sovereign-agentic-os-skills = { path = "../sovereign-agentic-os-skills" }
+sovereign-agentic-os-extensions = { path = "../sovereign-agentic-os-extensions" }
+zeroize = { workspace = true }
+tokio = { workspace = true }
+clap = { workspace = true }
+clap_complete = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+toml = { workspace = true }
+dirs = { workspace = true }
+reqwest = { workspace = true, features = ["blocking"] }
+sovereign-agentic-os-runtime = { path = "../sovereign-agentic-os-runtime" }
+uuid = { workspace = true }
+ratatui = { workspace = true }
+colored = { workspace = true }
+tempfile = { workspace = true }
