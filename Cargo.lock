@@ -3976,363 +3976,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "sovereign-agentic-os-api"
-version = "0.5.5"
-dependencies = [
- "argon2",
- "async-trait",
- "axum",
- "base64 0.22.1",
- "chrono",
- "dashmap",
- "futures",
- "governor",
- "hex",
- "hmac",
- "sovereign-agentic-os-channels",
- "sovereign-agentic-os-extensions",
- "sovereign-agentic-os-hands",
- "sovereign-agentic-os-kernel",
- "sovereign-agentic-os-memory",
- "sovereign-agentic-os-migrate",
- "sovereign-agentic-os-runtime",
- "sovereign-agentic-os-skills",
- "sovereign-agentic-os-types",
- "sovereign-agentic-os-wire",
- "rand 0.8.5",
- "reqwest 0.12.28",
- "serde",
- "serde_json",
- "sha2",
- "socket2 0.5.10",
- "subtle",
- "tempfile",
- "tokio",
- "tokio-stream",
- "tokio-test",
- "toml 0.9.12+spec-1.1.0",
- "tower",
- "tower-http",
- "tracing",
- "uuid",
-]
-
-[[package]]
-name = "sovereign-agentic-os-channels"
-version = "0.5.5"
-dependencies = [
- "aes",
- "async-trait",
- "axum",
- "base64 0.22.1",
- "cbc",
- "chrono",
- "dashmap",
- "futures",
- "hex",
- "hmac",
- "html-escape",
- "imap",
- "lettre",
- "mailparse",
- "native-tls",
- "sovereign-agentic-os-types",
- "prost",
- "regex-lite",
- "reqwest 0.12.28",
- "roxmltree",
- "rumqttc",
- "serde",
- "serde_json",
- "sha1",
- "sha2",
- "tokio",
- "tokio-stream",
- "tokio-test",
- "tokio-tungstenite 0.24.0",
- "tracing",
- "url",
- "uuid",
- "zeroize",
-]
-
-[[package]]
-name = "sovereign-agentic-os-cli"
-version = "0.5.5"
-dependencies = [
- "clap",
- "clap_complete",
- "colored",
- "dirs 6.0.0",
- "sovereign-agentic-os-api",
- "sovereign-agentic-os-extensions",
- "sovereign-agentic-os-kernel",
- "sovereign-agentic-os-migrate",
- "sovereign-agentic-os-runtime",
- "sovereign-agentic-os-skills",
- "sovereign-agentic-os-types",
- "ratatui",
- "reqwest 0.12.28",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
- "toml 0.9.12+spec-1.1.0",
- "tracing",
- "tracing-subscriber",
- "uuid",
- "zeroize",
-]
-
-[[package]]
-name = "sovereign-agentic-os-desktop"
-version = "0.5.5"
-dependencies = [
- "axum",
- "open",
- "sovereign-agentic-os-api",
- "sovereign-agentic-os-kernel",
- "sovereign-agentic-os-types",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-autostart",
- "tauri-plugin-dialog",
- "tauri-plugin-global-shortcut",
- "tauri-plugin-notification",
- "tauri-plugin-shell",
- "tauri-plugin-single-instance",
- "tauri-plugin-updater",
- "tokio",
- "toml 0.9.12+spec-1.1.0",
- "tracing",
- "tracing-subscriber",
-]
-
-[[package]]
-name = "sovereign-agentic-os-extensions"
-version = "0.5.5"
-dependencies = [
- "aes-gcm",
- "argon2",
- "axum",
- "base64 0.22.1",
- "chrono",
- "dashmap",
- "dirs 6.0.0",
- "sovereign-agentic-os-types",
- "rand 0.8.5",
- "reqwest 0.12.28",
- "serde",
- "serde_json",
- "sha2",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tokio-test",
- "toml 0.9.12+spec-1.1.0",
- "tracing",
- "url",
- "uuid",
- "zeroize",
-]
-
-[[package]]
-name = "sovereign-agentic-os-hands"
-version = "0.5.5"
-dependencies = [
- "chrono",
- "dashmap",
- "sovereign-agentic-os-types",
- "serde",
- "serde_json",
- "tempfile",
- "thiserror 2.0.18",
- "tokio-test",
- "toml 0.9.12+spec-1.1.0",
- "tracing",
- "uuid",
-]
-
-[[package]]
-name = "sovereign-agentic-os-kernel"
-version = "0.5.5"
-dependencies = [
- "async-trait",
- "chrono",
- "chrono-tz",
- "cron",
- "crossbeam",
- "dashmap",
- "dirs 6.0.0",
- "futures",
- "hex",
- "libc",
- "sovereign-agentic-os-channels",
- "sovereign-agentic-os-extensions",
- "sovereign-agentic-os-hands",
- "sovereign-agentic-os-memory",
- "sovereign-agentic-os-runtime",
- "sovereign-agentic-os-skills",
- "sovereign-agentic-os-types",
- "sovereign-agentic-os-wire",
- "rand 0.8.5",
- "reqwest 0.12.28",
- "serde",
- "serde_json",
- "subtle",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tokio-test",
- "toml 0.9.12+spec-1.1.0",
- "tracing",
- "tracing-subscriber",
- "uuid",
- "zeroize",
-]
-
-[[package]]
-name = "sovereign-agentic-os-memory"
-version = "0.5.5"
-dependencies = [
- "async-trait",
- "chrono",
- "sovereign-agentic-os-types",
- "reqwest 0.12.28",
- "rmp-serde",
- "rusqlite",
- "serde",
- "serde_json",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tokio-test",
- "tracing",
- "uuid",
-]
-
-[[package]]
-name = "sovereign-agentic-os-migrate"
-version = "0.5.5"
-dependencies = [
- "chrono",
- "dirs 6.0.0",
- "json5",
- "sovereign-agentic-os-types",
- "serde",
- "serde_json",
- "serde_yaml",
- "tempfile",
- "thiserror 2.0.18",
- "toml 0.9.12+spec-1.1.0",
- "tracing",
- "uuid",
- "walkdir",
-]
-
-[[package]]
-name = "sovereign-agentic-os-runtime"
-version = "0.5.5"
-dependencies = [
- "anyhow",
- "async-trait",
- "base64 0.22.1",
- "bytes",
- "chrono",
- "dashmap",
- "futures",
- "hex",
- "http",
- "sovereign-agentic-os-memory",
- "sovereign-agentic-os-skills",
- "sovereign-agentic-os-types",
- "regex-lite",
- "reqwest 0.12.28",
- "rmcp",
- "rusqlite",
- "serde",
- "serde_json",
- "sha2",
- "shlex",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tokio-stream",
- "tokio-test",
- "tokio-tungstenite 0.24.0",
- "tracing",
- "uuid",
- "wasmtime",
- "zeroize",
-]
-
-[[package]]
-name = "sovereign-agentic-os-skills"
-version = "0.5.5"
-dependencies = [
- "chrono",
- "hex",
- "sovereign-agentic-os-types",
- "reqwest 0.12.28",
- "serde",
- "serde_json",
- "serde_yaml",
- "sha2",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tokio-test",
- "toml 0.9.12+spec-1.1.0",
- "tracing",
- "uuid",
- "walkdir",
- "zip",
-]
-
-[[package]]
-name = "sovereign-agentic-os-types"
-version = "0.5.5"
-dependencies = [
- "async-trait",
- "chrono",
- "dirs 6.0.0",
- "ed25519-dalek",
- "hex",
- "rand 0.8.5",
- "rmp-serde",
- "serde",
- "serde_json",
- "sha2",
- "thiserror 2.0.18",
- "toml 0.9.12+spec-1.1.0",
- "uuid",
-]
-
-[[package]]
-name = "sovereign-agentic-os-wire"
-version = "0.5.5"
-dependencies = [
- "async-trait",
- "chrono",
- "dashmap",
- "hex",
- "hmac",
- "sovereign-agentic-os-types",
- "rand 0.8.5",
- "serde",
- "serde_json",
- "sha2",
- "subtle",
- "thiserror 2.0.18",
- "tokio",
- "tokio-test",
- "tracing",
- "uuid",
-]
-
-[[package]]
 name = "openssl"
 version = "0.10.76"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -6451,6 +6094,363 @@ dependencies = [
 ]
 
 [[package]]
+name = "sovereign-agentic-os-api"
+version = "0.5.5"
+dependencies = [
+ "argon2",
+ "async-trait",
+ "axum",
+ "base64 0.22.1",
+ "chrono",
+ "dashmap",
+ "futures",
+ "governor",
+ "hex",
+ "hmac",
+ "rand 0.8.5",
+ "reqwest 0.12.28",
+ "serde",
+ "serde_json",
+ "sha2",
+ "socket2 0.5.10",
+ "sovereign-agentic-os-channels",
+ "sovereign-agentic-os-extensions",
+ "sovereign-agentic-os-hands",
+ "sovereign-agentic-os-kernel",
+ "sovereign-agentic-os-memory",
+ "sovereign-agentic-os-migrate",
+ "sovereign-agentic-os-runtime",
+ "sovereign-agentic-os-skills",
+ "sovereign-agentic-os-types",
+ "sovereign-agentic-os-wire",
+ "subtle",
+ "tempfile",
+ "tokio",
+ "tokio-stream",
+ "tokio-test",
+ "toml 0.9.12+spec-1.1.0",
+ "tower",
+ "tower-http",
+ "tracing",
+ "uuid",
+]
+
+[[package]]
+name = "sovereign-agentic-os-channels"
+version = "0.5.5"
+dependencies = [
+ "aes",
+ "async-trait",
+ "axum",
+ "base64 0.22.1",
+ "cbc",
+ "chrono",
+ "dashmap",
+ "futures",
+ "hex",
+ "hmac",
+ "html-escape",
+ "imap",
+ "lettre",
+ "mailparse",
+ "native-tls",
+ "prost",
+ "regex-lite",
+ "reqwest 0.12.28",
+ "roxmltree",
+ "rumqttc",
+ "serde",
+ "serde_json",
+ "sha1",
+ "sha2",
+ "sovereign-agentic-os-types",
+ "tokio",
+ "tokio-stream",
+ "tokio-test",
+ "tokio-tungstenite 0.24.0",
+ "tracing",
+ "url",
+ "uuid",
+ "zeroize",
+]
+
+[[package]]
+name = "sovereign-agentic-os-cli"
+version = "0.5.5"
+dependencies = [
+ "clap",
+ "clap_complete",
+ "colored",
+ "dirs 6.0.0",
+ "ratatui",
+ "reqwest 0.12.28",
+ "serde",
+ "serde_json",
+ "sovereign-agentic-os-api",
+ "sovereign-agentic-os-extensions",
+ "sovereign-agentic-os-kernel",
+ "sovereign-agentic-os-migrate",
+ "sovereign-agentic-os-runtime",
+ "sovereign-agentic-os-skills",
+ "sovereign-agentic-os-types",
+ "tempfile",
+ "tokio",
+ "toml 0.9.12+spec-1.1.0",
+ "tracing",
+ "tracing-subscriber",
+ "uuid",
+ "zeroize",
+]
+
+[[package]]
+name = "sovereign-agentic-os-desktop"
+version = "0.5.5"
+dependencies = [
+ "axum",
+ "open",
+ "serde",
+ "serde_json",
+ "sovereign-agentic-os-api",
+ "sovereign-agentic-os-kernel",
+ "sovereign-agentic-os-types",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-autostart",
+ "tauri-plugin-dialog",
+ "tauri-plugin-global-shortcut",
+ "tauri-plugin-notification",
+ "tauri-plugin-shell",
+ "tauri-plugin-single-instance",
+ "tauri-plugin-updater",
+ "tokio",
+ "toml 0.9.12+spec-1.1.0",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
+name = "sovereign-agentic-os-extensions"
+version = "0.5.5"
+dependencies = [
+ "aes-gcm",
+ "argon2",
+ "axum",
+ "base64 0.22.1",
+ "chrono",
+ "dashmap",
+ "dirs 6.0.0",
+ "rand 0.8.5",
+ "reqwest 0.12.28",
+ "serde",
+ "serde_json",
+ "sha2",
+ "sovereign-agentic-os-types",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-test",
+ "toml 0.9.12+spec-1.1.0",
+ "tracing",
+ "url",
+ "uuid",
+ "zeroize",
+]
+
+[[package]]
+name = "sovereign-agentic-os-hands"
+version = "0.5.5"
+dependencies = [
+ "chrono",
+ "dashmap",
+ "serde",
+ "serde_json",
+ "sovereign-agentic-os-types",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio-test",
+ "toml 0.9.12+spec-1.1.0",
+ "tracing",
+ "uuid",
+]
+
+[[package]]
+name = "sovereign-agentic-os-kernel"
+version = "0.5.5"
+dependencies = [
+ "async-trait",
+ "chrono",
+ "chrono-tz",
+ "cron",
+ "crossbeam",
+ "dashmap",
+ "dirs 6.0.0",
+ "futures",
+ "hex",
+ "libc",
+ "rand 0.8.5",
+ "reqwest 0.12.28",
+ "serde",
+ "serde_json",
+ "sovereign-agentic-os-channels",
+ "sovereign-agentic-os-extensions",
+ "sovereign-agentic-os-hands",
+ "sovereign-agentic-os-memory",
+ "sovereign-agentic-os-runtime",
+ "sovereign-agentic-os-skills",
+ "sovereign-agentic-os-types",
+ "sovereign-agentic-os-wire",
+ "subtle",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-test",
+ "toml 0.9.12+spec-1.1.0",
+ "tracing",
+ "tracing-subscriber",
+ "uuid",
+ "zeroize",
+]
+
+[[package]]
+name = "sovereign-agentic-os-memory"
+version = "0.5.5"
+dependencies = [
+ "async-trait",
+ "chrono",
+ "reqwest 0.12.28",
+ "rmp-serde",
+ "rusqlite",
+ "serde",
+ "serde_json",
+ "sovereign-agentic-os-types",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-test",
+ "tracing",
+ "uuid",
+]
+
+[[package]]
+name = "sovereign-agentic-os-migrate"
+version = "0.5.5"
+dependencies = [
+ "chrono",
+ "dirs 6.0.0",
+ "json5",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+ "sovereign-agentic-os-types",
+ "tempfile",
+ "thiserror 2.0.18",
+ "toml 0.9.12+spec-1.1.0",
+ "tracing",
+ "uuid",
+ "walkdir",
+]
+
+[[package]]
+name = "sovereign-agentic-os-runtime"
+version = "0.5.5"
+dependencies = [
+ "anyhow",
+ "async-trait",
+ "base64 0.22.1",
+ "bytes",
+ "chrono",
+ "dashmap",
+ "futures",
+ "hex",
+ "http",
+ "regex-lite",
+ "reqwest 0.12.28",
+ "rmcp",
+ "rusqlite",
+ "serde",
+ "serde_json",
+ "sha2",
+ "shlex",
+ "sovereign-agentic-os-memory",
+ "sovereign-agentic-os-skills",
+ "sovereign-agentic-os-types",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-stream",
+ "tokio-test",
+ "tokio-tungstenite 0.24.0",
+ "tracing",
+ "uuid",
+ "wasmtime",
+ "zeroize",
+]
+
+[[package]]
+name = "sovereign-agentic-os-skills"
+version = "0.5.5"
+dependencies = [
+ "chrono",
+ "hex",
+ "reqwest 0.12.28",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+ "sha2",
+ "sovereign-agentic-os-types",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-test",
+ "toml 0.9.12+spec-1.1.0",
+ "tracing",
+ "uuid",
+ "walkdir",
+ "zip 8.4.0",
+]
+
+[[package]]
+name = "sovereign-agentic-os-types"
+version = "0.5.5"
+dependencies = [
+ "async-trait",
+ "chrono",
+ "dirs 6.0.0",
+ "ed25519-dalek",
+ "hex",
+ "rand 0.8.5",
+ "rmp-serde",
+ "serde",
+ "serde_json",
+ "sha2",
+ "thiserror 2.0.18",
+ "toml 0.9.12+spec-1.1.0",
+ "uuid",
+]
+
+[[package]]
+name = "sovereign-agentic-os-wire"
+version = "0.5.5"
+dependencies = [
+ "async-trait",
+ "chrono",
+ "dashmap",
+ "hex",
+ "hmac",
+ "rand 0.8.5",
+ "serde",
+ "serde_json",
+ "sha2",
+ "sovereign-agentic-os-types",
+ "subtle",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-test",
+ "tracing",
+ "uuid",
+]
+
+[[package]]
 name = "spin"
 version = "0.9.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7023,7 +7023,7 @@ dependencies = [
  "tokio",
  "url",
  "windows-sys 0.60.2",
- "zip",
+ "zip 4.6.1",
 ]
 
 [[package]]
@@ -7694,6 +7694,12 @@ dependencies = [
  "thiserror 2.0.18",
  "utf-8",
 ]
+
+[[package]]
+name = "typed-path"
+version = "0.12.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8e28f89b80c87b8fb0cf04ab448d5dd0dd0ade2f8891bae878de66a75a28600e"
 
 [[package]]
 name = "typeid"
@@ -9556,9 +9562,21 @@ checksum = "caa8cd6af31c3b31c6631b8f483848b91589021b28fffe50adada48d4f4d2ed1"
 dependencies = [
  "arbitrary",
  "crc32fast",
+ "indexmap 2.13.0",
+ "memchr",
+]
+
+[[package]]
+name = "zip"
+version = "8.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7756d0206d058333667493c4014f545f4b9603c4330ccd6d9b3f86dcab59f7d9"
+dependencies = [
+ "crc32fast",
  "flate2",
  "indexmap 2.13.0",
  "memchr",
+ "typed-path",
  "zopfli",
 ]
 
