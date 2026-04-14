@@ -201,7 +201,7 @@ jobs:
           $hash = (Get-FileHash "sovereign-agentic-os-${{ matrix.target }}.zip" -Algorithm SHA256).Hash.ToLower()
           "$hash  sovereign-agentic-os-${{ matrix.target }}.zip" | Out-File -Encoding ASCII "sovereign-agentic-os-${{ matrix.target }}.zip.sha256"
       - name: Upload to GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: sovereign-agentic-os-${{ matrix.target }}.*
         env:
